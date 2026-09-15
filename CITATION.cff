@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it as below."
+title: "U.S. Heat-Cardiorenal Vulnerability Atlas"
+type: software
+authors:
+  - family-names: "Vemula"
+    given-names: "Divya"
+year: 2026
+abstract: "Interactive county-level spatial epidemiology atlas of extreme heat, cardiometabolic susceptibility, social vulnerability, and age-adjusted heart-disease mortality across the United States."
