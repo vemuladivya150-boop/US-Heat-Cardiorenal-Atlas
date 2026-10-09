@@ -42,13 +42,25 @@ The project combines epidemiology, statistical scoring, GIS, and interactive 3D 
 
 ## Data Sources
 
-### CDC Environmental Public Health Tracking
+### CDC Environmental Public Health Tracking Network
 
-County-level extreme heat exposure was represented using annual extreme heat days based on a relative 90th-percentile maximum-temperature threshold.
+Extreme heat exposure was represented using county-level historical extreme heat data from CDC's National Environmental Public Health Tracking Network.
 
-### CDC PLACES
+- CDC Tracking climate-change data overview: https://www.cdc.gov/environmental-health-tracking/php/data-research/climate-change.html
+- CDC Tracking Data Explorer: https://ephtracking.cdc.gov/DataExplorer/
+- CDC EPHTrackR package / API examples: https://github.com/CDCgov/EPHTrackR
 
-County-level cardiometabolic indicators include:
+The heat measure used in this project was based on annual extreme heat days during May-September and a relative temperature threshold.
+
+### CDC PLACES — 2022 County Release
+
+County-level cardiometabolic indicators were obtained from the CDC PLACES 2022 county release.
+
+- PLACES 2022 county dataset used in this project: https://data.cdc.gov/500-Cities-Places/PLACES-Local-Data-for-Better-Health-County-Data-20/duw2-7jbt/about_data
+- CDC PLACES data portal: https://www.cdc.gov/places/tools/data-portal.html
+- PLACES measure definitions: https://www.cdc.gov/places/measure-definitions/index.html
+
+Indicators used:
 
 - Hypertension
 - Diabetes
@@ -57,11 +69,18 @@ County-level cardiometabolic indicators include:
 
 ### CDC/ATSDR Social Vulnerability Index
 
-County-level social vulnerability was incorporated using the Social Vulnerability Index (SVI).
+County-level social vulnerability was incorporated using CDC/ATSDR SVI data.
 
-### CDC WONDER
+- SVI data and documentation: https://www.atsdr.cdc.gov/place-health/php/svi/svi-data-documentation-download.html
 
-Age-adjusted heart-disease mortality was used as the outcome and as the 3D extrusion height in the atlas.
+### CDC WONDER — Underlying Cause of Death
+
+Age-adjusted heart-disease mortality was obtained from CDC WONDER and used as the epidemiologic outcome and the 3D extrusion height.
+
+- CDC WONDER mortality datasets: https://wonder.cdc.gov/deaths-by-underlying-cause.html
+- CDC WONDER dataset descriptions: https://wonder.cdc.gov/datasets.html
+
+The analysis used heart-disease mortality for 2016-2020.
 
 ---
 
@@ -124,6 +143,33 @@ A selected county is highlighted in **gold**, elevated above surrounding countie
 - **GIS / spatial epidemiology**
 
 The public GitHub Pages version uses exported GeoJSON files and browser-side MapLibre rendering.
+
+---
+
+## Software, Documentation, and Project Links
+
+### R and Spatial Analysis
+
+- R: https://www.r-project.org/
+- Shiny: https://shiny.posit.co/
+- sf: https://cran.r-project.org/package=sf
+- dplyr: https://dplyr.tidyverse.org/
+- stringr: https://stringr.tidyverse.org/
+- scales: https://scales.r-lib.org/
+- tigris: https://walker-data.com/tigris/
+
+### Interactive Mapping
+
+- mapgl: https://walker-data.com/mapgl/
+- MapLibre GL JS: https://maplibre.org/maplibre-gl-js/docs/
+- CARTO basemaps: https://carto.com/basemaps/
+
+### Publishing and Version Control
+
+- GitHub: https://github.com/
+- GitHub Pages documentation: https://docs.github.com/en/pages
+- Live atlas: https://vemuladivya150-boop.github.io/US-Heat-Cardiorenal-Atlas/
+- Project repository: https://github.com/vemuladivya150-boop/US-Heat-Cardiorenal-Atlas
 
 ---
 
